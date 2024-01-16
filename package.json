@@ -1,0 +1,37 @@
+{
+  "name": "turbo-infra-starter",
+  "description": "Front-end infra based on TurboRepo",
+  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "clean": "turbo clean && rm -rf node_modules",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "prettier:fix": "prettier --write --ignore-unknown .",
+    "cz": "git-cz",
+    "changeset": "pnpm changeset",
+    "changeset:version": "pnpm changeset version",
+    "changeset:publish": "turbo build --filter=docs^... && pnpm changeset publish",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@infra/eslint-config": "workspace:*",
+    "@changesets/cli": "^2.27.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.2",
+    "turbo": "^1.11.3"
+  },
+  "packageManager": "pnpm@8.14.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "private": true,
+  "license": "MIT"
+}
