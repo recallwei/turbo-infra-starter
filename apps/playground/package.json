@@ -1,22 +1,35 @@
 {
-  "name": "docs",
-  "private": true,
-  "version": "0.0.0",
+  "name": "playground",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.ts\""
+    "eslint:check": "eslint \"**/*.{ts,tsx}\" --color",
+    "eslint:fix": "pnpm eslint:check --fix"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "eslint": "^8.56.0",
+    "@infra/components": "workspace:*",
+    "@storybook/addon-essentials": "^7.6.8",
+    "@storybook/addon-interactions": "^7.6.8",
+    "@storybook/addon-links": "^7.6.8",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.8",
+    "@storybook/cli": "^7.6.8",
+    "@storybook/react": "^7.6.8",
+    "@storybook/react-vite": "^7.6.8",
+    "@storybook/test": "^7.6.8",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "storybook": "^7.6.8",
     "typescript": "^5.3.3",
-    "vite": "^5.0.10"
-  }
+    "vite": "^5.0.11"
+  },
+  "private": true,
+  "license": "MIT"
 }

@@ -1,22 +1,48 @@
 {
-  "name": "@acme/eslint-config",
+  "name": "@infra/eslint-config",
   "version": "0.0.0",
-  "private": true,
-  "files": [
-    "library.js",
-    "next.js",
-    "react-internal.js"
+  "description": "Collection of internal ESLint configurations.",
+  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
+  "homepage": "https://github.com/recallwei/turbo-infra-starter#readme",
+  "bugs": "https://github.com/recallwei/turbo-infra-starter/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/recallwei/turbo-infra-starter.git",
+    "directory": "packages/eslint-config"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript"
   ],
+  "peerDependencies": {
+    "eslint": ">=8.56.0"
+  },
   "devDependencies": {
-    "@vercel/style-guide": "^5.1.0",
-    "eslint-config-turbo": "^1.11.3",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-only-warn": "^1.1.0",
-    "@typescript-eslint/parser": "^6.19.0",
+    "@react-native/eslint-plugin": "^0.74.0",
+    "@tanstack/eslint-plugin-query": "^5.17.7",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
-    "typescript": "^5.3.3"
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "^14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-tailwindcss": "^3.14.0",
+    "eslint-plugin-unused-imports": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-turbo": "^1.11.3"
   }
 }

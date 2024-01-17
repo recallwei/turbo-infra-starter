@@ -1,5 +1,12 @@
 {
-  "extends": "@acme/tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "extends": "@infra/tsconfig/base",
+
+  "include": ["build.config.ts", "src"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "sourceMap": false
+  }
 }

@@ -4,19 +4,24 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "outputs": ["dist/**", "build/**", ".next/**", "!.next/cache/**", "storybook-static/**"]
     },
     "test": {
       "outputs": ["coverage/**"],
       "dependsOn": []
     },
-    "lint": {},
     "dev": {
       "cache": false,
       "persistent": true
     },
     "clean": {
       "cache": false
-    }
+    },
+    "cspell:check": {},
+    "type:check": {},
+    "eslint:check": {},
+    "eslint:fix": {},
+    "prettier:check": {},
+    "prettier:fix": {}
   }
 }

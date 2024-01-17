@@ -1,12 +1,30 @@
 {
-  "name": "@repo/tailwind-config",
+  "name": "@infra/tailwind-config",
   "version": "0.0.0",
-  "private": true,
+  "description": "Collection of internal TailwindCSS configurations.",
+  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
+  "homepage": "https://github.com/recallwei/turbo-infra-starter#readme",
+  "bugs": "https://github.com/recallwei/turbo-infra-starter/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/recallwei/turbo-infra-starter.git",
+    "directory": "packages/tailwind-config"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwind-config"
+  ],
   "exports": {
     ".": "./tailwind.config.ts"
   },
+  "peerDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "tailwindcss": "^3.4.0"
-  }
+    "tailwindcss": "^3.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
 }

@@ -1,0 +1,6 @@
+{
+  "extends": ["@infra/eslint-config/react.js", "plugin:storybook/recommended"],
+  "globals": {
+    "@infra/utils": true
+  }
+}
