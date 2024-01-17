@@ -3,8 +3,8 @@
   "description": "Front-end infra based on TurboRepo",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
   "scripts": {
-    "build": "turbo build",
     "dev": "turbo dev",
+    "build": "turbo build",
     "clean": "turbo clean && rm -rf node_modules",
     "playground:dev": "turbo dev --filter=playground",
     "cspell:check": "turbo cspell:check",
@@ -33,7 +33,7 @@
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.2.2",
+    "prettier": "^3.2.4",
     "turbo": "^1.11.3",
     "unbuild": "^2.0.0"
   },

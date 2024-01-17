@@ -1,0 +1,12 @@
+{
+  "extends": ["@infra/tsconfig/react"],
+  "include": ["src", "@types/**/*.d.ts", "tailwind.config.ts"],
+
+  "compilerOptions": {
+    "types": ["unplugin-icons/types/react"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}

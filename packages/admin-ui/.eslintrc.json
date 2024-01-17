@@ -1,0 +1,3 @@
+{
+  "extends": "@infra/eslint-config/react.js"
+}

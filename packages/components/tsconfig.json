@@ -1,4 +1,0 @@
-{
-  "extends": ["@infra/tsconfig/react-lib"],
-  "include": ["src"]
-}

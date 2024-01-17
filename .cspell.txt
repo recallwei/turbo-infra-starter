@@ -1,5 +1,14 @@
+ahooks
 antd
 autodocs
 classname
 clsx
+cssinjs
+echarts
+iconify
+immer
+nprogress
 preinstall
+svgr
+unplugin
+zustand

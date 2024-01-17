@@ -12,7 +12,9 @@
     "declarationMap": true,
     "esModuleInterop": true,
     "sourceMap": true,
-    "composite": false
+    "composite": false,
+    "useDefineForClassFields": true,
+    "noFallthroughCasesInSwitch": true
   },
   "exclude": ["node_modules"]
 }
