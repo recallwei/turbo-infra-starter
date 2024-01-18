@@ -25,6 +25,7 @@
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@infra/eslint-config": "workspace:*",
+    "@infra/prettier-config": "workspace:*",
     "@infra/tailwind-config": "workspace:*",
     "@infra/tsconfig": "workspace:*",
     "commitizen": "^4.3.0",
@@ -41,6 +42,7 @@
   "engines": {
     "node": ">=20"
   },
+  "prettier": "@infra/prettier-config",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git"
